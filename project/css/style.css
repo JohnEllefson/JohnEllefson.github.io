@@ -1,0 +1,57 @@
+body {
+    background-color: #5A82A2;
+    font-size: 16px;
+}
+
+.page-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #3061A1;
+    color: #049A76;
+    border: 5px solid #333;
+    padding: 10px;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+    border: 1px solid #000;
+    box-shadow: 0 0 30px #cccccc;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+h2 {
+    color: #333;
+}
+
+main {
+    background-color: #049A76;
+}
+
+p {
+    background-color: #3061A1;
+}
+
+nav {
+    background-color: #59B78C;
+}
+
+nav a:link {
+    color: #0F3B6D;
+}
+
+nav a:visited {
+    color: #2E0854;
+}
+
+nav a:hover {
+    color: #2F6690;
+    background-color: #87C1BB;
+}
