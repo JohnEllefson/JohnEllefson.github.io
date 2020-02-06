@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap');
+
 body {
-    background-color: #3061A1;
+    background-color: rgb(58, 104, 163);
     font-size: 16px;
+    font-family: Helvetica, arial, verdana, sans-serif;
 }
 
 .page-container {
@@ -9,38 +12,50 @@ body {
 }
 
 header {
-    background-color: #5A82A2;
+    background-color: rgb(209, 146, 30);
     color: rgb(5, 95, 74);
     border: 5px solid #333;
-    padding: 10px;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header img {
-    width: 50px;
+    width: 150px;
     height: auto;
     border: 1px solid #000;
     box-shadow: 0 0 30px #cccccc;
 }
 
 header h1 {
-    font-size: 3.5rem;
-    margin: 0;
+    font-size: 3rem;
+    font-family: "IM Fell Great Primer SC";
+    margin: 0 0 0 10px;
 }
 
 h2 {
     color: #333;
+    font-family: "IM Fell Great Primer SC";
+    margin-left: 10px;
 }
 
 main {
-    background-color: #049A76;
+    background-color: rgb(59, 161, 148);
 }
 
 p {
-    background-color: #5A82A2;
+    background-color: rgb(159, 185, 97);
+    margin: 15px;
+    padding: 4px;
+    font-size: 1rem;
 }
 
 nav {
-    background-color: #59B78C;
+    background-color: rgb(197, 163, 68);
+    border: 4px solid #333;
+    text-align: center;
+    margin: 15px;
 }
 
 nav a:link {
@@ -52,6 +67,34 @@ nav a:visited {
 }
 
 nav a:hover {
-    color: #2F6690;
-    background-color: #87C1BB;
+    color: rgb(85, 69, 18);
+    background-color: rgb(211, 191, 79);
+}
+
+nav ul {
+    display: flex;   
+
+}
+
+nav li {
+    margin-right: 200px;
+}
+
+.motto {
+    font-family: "IM Fell Great Primer SC";
+    letter-spacing: 1pt;
+    font-size: 1.7rem;
+}
+
+.social {
+    background-color: rgb(197, 163, 68);
+    border: 4px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.socialSpacing {
+    margin: 10px;
 }
