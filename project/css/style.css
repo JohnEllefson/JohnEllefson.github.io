@@ -1,5 +1,5 @@
 body {
-    background-color: #5A82A2;
+    background-color: #3061A1;
     font-size: 16px;
 }
 
@@ -9,8 +9,8 @@ body {
 }
 
 header {
-    background-color: #3061A1;
-    color: #049A76;
+    background-color: #5A82A2;
+    color: rgb(5, 95, 74);
     border: 5px solid #333;
     padding: 10px;
 }
@@ -36,7 +36,7 @@ main {
 }
 
 p {
-    background-color: #3061A1;
+    background-color: #5A82A2;
 }
 
 nav {
