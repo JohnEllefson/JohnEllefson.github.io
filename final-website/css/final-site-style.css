@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine:700&display=swap');
+
+body {
+    font-size: 20px;
+    background: linear-gradient(to bottom, #6600cc 20%, #000099 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Helvetica, arial, verdana, sans-serif;
+}
+
+nav {
+    background-color: #cacaca;
+    font-size: 1.5rem;
+    border: ridge 7px rgb(97, 97, 97);
+    display: flex;
+}
+
+nav ul {
+    position: relative;
+    right: -60px;
+    display: flex;
+}
+
+nav li {
+    margin-right: 120px;
+}
+
+nav a:link {
+    color: #0F3B6D;
+}
+
+nav a:hover {
+    color: rgb(85, 69, 18);
+    background-color: rgb(211, 191, 79);
+}
+
+main {
+    background-color: #cacaca;
+    padding: 15px;
+    border: ridge 7px rgb(97, 97, 97);
+    margin-top: 20px;
+}
+
+h1, h2 {
+    font-family: 'Tangerine', cursive;
+}
+
+p {
+    margin: 10px;
+}
+
+footer {
+    background-color: #cacaca;
+    padding: 15px;
+    border: ridge 7px rgb(97, 97, 97);
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.page-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.heading {
+    font-size: 6.4rem;
+    color: #d9d9d9;
+    text-align: center;
+    position: relative;
+    bottom: -30px;
+}
+
+}
+.socialText {
+    position: relative;
+    margin-top: 20px;
+}
+
+.socialIcons {
+    margin-left: 20px;
+    position: relative;
+    right: -670px;
+    top: -10px;
+}
+
+
+
+/*For Homepage Only*/
+
+
+
+.home-headline-1 {
+    grid-column: 5 / 8;
+    grid-row: 1 / 2;
+    font-size: 3.8rem;
+    position: relative;
+    top: -35px;
+}
+
+.home-paragraph-1 {
+    grid-column: 5 / 8;
+    grid-row: 2 / 4;
+    font-size: 1.3rem;
+    position: relative;
+    top: -80px;
+    left: -25px;
+}
+.home-left-img {
+    grid-column: 1 / 5;
+    grid-row: 1 / 4;
+    width: 100%;
+    height: auto;
+    position: relative;
+    right: -55px;
+    bottom: -5px;
+}
+
+.home-headline-2 {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    font-size: 3.8rem;
+    position: relative;
+    bottom: -35px;
+    right: -20px;
+}
+
+.home-paragraph-2 {
+    grid-column: 1 / 5;
+    grid-row: 4 / 7;
+    font-size: 1.3rem;
+    position: relative;
+    right: -20px;
+    top: -20px;
+}
+
+.home-right-img {
+    grid-column: 5 / 8;
+    grid-row: 5 / 7;
+    width: 100%;
+    height: auto;
+    position: relative;
+    right: -70px;
+    top: -45px;
+}
