@@ -1,0 +1,35 @@
+table {
+    width: 250px;
+    height: 300px;
+    box-shadow: 0px 0px 25px black;
+    margin: auto;
+    border-collapse: collapse;
+    position: relative;
+    bottom: -50px
+}
+
+th {
+    background-color: black;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid rgb(192, 192, 192);
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid rgb(192, 192, 192);
+}
+
+.rowOne {
+    color: rgb(255, 255, 0);
+    font-size: 25px;
+}
+
+.rowTwo {
+    color: rgb(255, 255, 255);
+}
+
+.rowFive {
+    background-color: rgb(204, 204, 204);
+}
