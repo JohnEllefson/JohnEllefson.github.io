@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>My Traditional Living - Home</title>
+
+    <meta name="description"
+        content="Here you can find many amazing recipes with instructions easy enough for those with any level of cooking experience">
+
+    <link href="css/final-site-style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="page-container">
+
+        <header>
+
+            <h1 class="heading">My Traditional Living</h1>
+
+        </header>
+
+        <nav>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipe-categories.html"> <strong>Recipes</strong> </a></li>
+                <li><a href="tips-and-tricks.html">Tips and Tricks</a></li>
+            </ul>
+
+        </nav>
+
+        <main>
+
+            <div class="recipes-grid">
+
+                <h2 class="recipes-header">Honey Caramels</h2>
+
+                <ul>
+                    <li>1/2 cup butter</li>
+                    <li>1 can sweetened condensed milk (14 oz.) </li>
+                    <li>1 cup sugar</li>
+                    <li>1/2 cup honey (spray measuring cup with cooking spray for easy release of the honey)</li>
+                    <li>Chopped walnuts to put on bottom of a 9 to 10 inch pie plate, or two smaller pie plates (we use
+                        1/3 to 1/2 cup chopped nuts in each smaller pie plate) (or you can use pecans if you prefer)
+                    </li>
+                </ul>
+
+                <img class="recipes-picture" src="images/honey-caramels-2.jpg" alt="Honey Caramel">
+
+                <p class="recipe-description">
+                    Spray pie plates with cooking spray. Sprinkle chopped walnuts to fill the bottoms of the pie plates.
+                    Set aside on a cooling rack or on hot pads. Mix the other four ingredients together in a heavy pot.
+                    Stir constantly, using a wooden or heavy silicone spoon, over medium heat. Cook to soft-ball stage
+                    (238°). (You can tell when it reaches soft-ball stage by dropping about a teaspoon of the hot
+                    mixture into a bowl of very cold water. When the caramel mixture can be formed into a soft ball with
+                    your fingers in the cold water, then it has reached the soft-ball stage.)
+                    <br><br>
+                    In 2015, we started making this in a medium sized, heavy Teflon saucepan, using a silicone spoon, or
+                    the wooden spoon works fine too. The silicone spoon helps keep the mixture from forming little
+                    burned pieces because while constantly stirring it keeps the bottom and sides cleaned. Once the
+                    mixture comes to a rapid boil, stir it constantly on medium heat (setting 6 on our home stove) and
+                    <strong>allow it to boil for 4-5 minutes before checking it for soft-ball stage.</strong> Works
+                    great! <strong>NOTE:</strong> The Teflon pan allows for easier cleanup because the caramel mixture
+                    literally pours out of the pan instead of sticking. It also helps keep the mixture from getting
+                    little burned pieces in it.
+                    <br><br>
+                    Quickly pour into greased pie plate(s) with chopped walnuts on the bottom. (This makes enough to
+                    pour into two smaller pie plates with nuts. These are great as gifts, using disposable foil pie
+                    pans.) Cool. Cut into squares. Enjoy! I prefer to use two 8-9 inch disposable pie pans and I spray
+                    them with olive oil spray instead of buttering them.
+                </p>
+
+                <img class="recipes-picture" src="images/" alt="">
+
+                <h3 class="comment-header">Leave a comment on this recipe!</h3>
+
+                <div id="feedback"></div>
+
+                <form action="/my-handling-form-page" method="post">
+
+                    <ul>
+
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" />
+                        </li>
+
+                        <li>
+                            <label for="mail">E-mail:</label>
+                            <input type="email" id="mail" name="user_mail" />
+                        </li>
+
+                        <li>
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+
+                        <li class="button">
+                            <button type="submit">Post your comment</button>
+                        </li>
+
+                    </ul>
+
+                </form>
+
+                <script>
+                    const feedbackElement = document.getElementById('feedback');
+                    const formElement = document.forms[0];
+
+                    formElement.addEventListener('submit', function (e) {
+                        e.preventDefault();
+                        feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
+                            '! Your comment has been successfully posted!';
+                        feedbackElement.style.display = "block";
+                    });
+                </script>
+
+            </div>
+
+        </main>
+
+        <footer>
+
+            <div class="social">
+
+                <div class="socialText">
+
+                    © 2020 My Traditional Living - John Ellefson - WDD 130-05
+
+                </div>
+
+                <a href="https://www.facebook.com/" class="socialIcons"> <img src="images/facebook.png"
+                        alt="Facebook Icon" /> </a>
+
+                <a href="https://www.twitter.com/" class="socialIcons"> <img src="images/twitter.png"
+                        alt="Twitter Icon" />
+                </a>
+
+                <a href="https://www.instagram.com/" class="socialIcons"> <img src="images/instagram.png"
+                        alt="Instagram Icon" /> </a>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

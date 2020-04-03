@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>My Traditional Living - Home</title>
+
+    <meta name="description"
+        content="Here you can find many amazing recipes with instructions easy enough for those with any level of cooking experience">
+
+    <link href="css/final-site-style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="page-container">
+
+        <header>
+
+            <h1 class="heading">My Traditional Living</h1>
+
+        </header>
+
+        <nav>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipe-categories.html"> <strong>Recipes</strong> </a></li>
+                <li><a href="tips-and-tricks.html">Tips and Tricks</a></li>
+            </ul>
+
+        </nav>
+
+        <main>
+
+            <div class="recipes-grid">
+
+                <h2 class="recipes-header">Pecan-Crusted Chicken Strips</h2>
+
+                <p>
+                    Adapted from Fix, Freeze, Feast cookbook (p. 38)
+                    <br><br>
+                    <strong>NOTE:</strong> Requires time to marinate for at least a day
+                    <br><br>
+                    <strong>The marinade is enough for 2-3 cut up chicken breasts (about 14 pieces) in a quart size
+                        Ziploc bag, OR you can use 4-6 chicken breasts (22 or more pieces) in a gallon size Ziploc bag,
+                        using the same amount of marinade. </strong>
+                    <br><br>
+                </p>
+
+                <img class="recipes-picture" src="images/pecan-chicken-2.jpg" alt="Pecan Chicken">
+
+                <ul>
+                    <li>2-3 boneless chicken breasts (for a larger family or to make enough for leftovers, you can
+                        instead cut up 4-5
+                        chicken breasts)</li>
+                    <li>2/3 cup honey</li>
+                    <li>1/3 cup spicy brown mustard </li>
+                    <li>1/4 cup olive oil</li>
+                    <li>1 tsp. salt</li>
+                    <li>1 tsp. garlic powder</li>
+                    <li>1 tsp. black pepper</li>
+                </ul>
+
+                <p class="p-move-left">
+                    <strong>Baking:</strong>
+                </p>
+
+                <ul>
+                    <li>2/3 to 1 cup plain Panko (Japanese breadcrumbs) </li>
+                    <li>2/3 to 1 cup pecans, finely chopped (2/3 cup after chopped)</li>
+                </ul>
+
+                <p class="recipe-description">
+                    <strong>Prepare chicken:</strong> Rinse and trim chicken breasts as desired. Cut each breast
+                    lengthwise into 3 strips
+                    and then each strip into several pieces. You want strips to be about 3 inches long and not too
+                    thick.
+                    <br><br>
+                    <strong>Prepare marinade:</strong> Combine honey, mustard, oil, salt, garlic powder and pepper in a
+                    medium bowl. (I
+                    spray the measuring cups for the mustard and the honey so it slides out easier after measuring.)
+                    Stir together with a whisk. Mix chicken and marinade: Put chicken strips in a quart or gallon
+                    freezer Ziploc bag for freezing or in a plastic container if you are going to marinate and use
+                    within a couple days. (I place the chicken bag in tall bowl and use a canning funnel and rubber
+                    spatula to pour in the sauce. See photos below.) Carefully pour the sauce over the chicken. Squeeze
+                    out excess air and zip the bag closed before squishing the sauce and meat strips together. Lay flat
+                    in the fridge. I would wait at least 4 hours to overnight (to allow marinade to soak in) before
+                    freezing, if desired. I usually let my meat marinade in the fridge 2-3 days before cooking up if I’m
+                    not going to freeze it. (Original recipe says to freeze the Panko bread crumbs and finely chopped
+                    pecans in a separate bag, but I choose to make it up fresh when I’m ready to cook the meat so they
+                    don’t get soggy with condensation in the freezer. I use a Prepworks by Progressive hand nut chopper
+                    to chop the pecans.)
+                    <br><br>
+                    <strong>To cook:</strong> Completely thaw the meat in the fridge (if you froze it). Preheat the oven
+                    to 350°. Place
+                    Panko crumbs and finely chopped pecans on a plate or in a pasta bowl. Shake excess marinade sauce
+                    off each piece of chicken, roll in crumbs, and place on a greased jelly roll pan. (do not use foil
+                    on the pan, as the meat may stick to the foil) Bake for 25 minutes, or until chicken pulls apart
+                    easily and is no longer pink in the thickest part when cut. Top crust should be starting to brown.
+                    Serve with a vegetable and rolls.
+                </p>
+
+                <h3 class="comment-header">Leave a comment on this recipe!</h3>
+
+                <div id="feedback"></div>
+
+                <form action="/my-handling-form-page" method="post">
+
+                    <ul>
+
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" />
+                        </li>
+
+                        <li>
+                            <label for="mail">E-mail:</label>
+                            <input type="email" id="mail" name="user_mail" />
+                        </li>
+
+                        <li>
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+
+                        <li class="button">
+                            <button type="submit">Post your comment</button>
+                        </li>
+
+                    </ul>
+
+                </form>
+
+                <script>
+                    const feedbackElement = document.getElementById('feedback');
+                    const formElement = document.forms[0];
+
+                    formElement.addEventListener('submit', function (e) {
+                        e.preventDefault();
+                        feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
+                            '! Your comment has been successfully posted!';
+                        feedbackElement.style.display = "block";
+                    });
+                </script>
+
+            </div>
+
+        </main>
+
+        <footer>
+
+            <div class="social">
+
+                <div class="socialText">
+
+                    © 2020 My Traditional Living - John Ellefson - WDD 130-05
+
+                </div>
+
+                <a href="https://www.facebook.com/" class="socialIcons"> <img src="images/facebook.png"
+                        alt="Facebook Icon" /> </a>
+
+                <a href="https://www.twitter.com/" class="socialIcons"> <img src="images/twitter.png"
+                        alt="Twitter Icon" />
+                </a>
+
+                <a href="https://www.instagram.com/" class="socialIcons"> <img src="images/instagram.png"
+                        alt="Instagram Icon" /> </a>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

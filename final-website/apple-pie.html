@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>My Traditional Living - Home</title>
+
+    <meta name="description"
+        content="Here you can find many amazing recipes with instructions easy enough for those with any level of cooking experience">
+
+    <link href="css/final-site-style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="page-container">
+
+        <header>
+
+            <h1 class="heading">My Traditional Living</h1>
+
+        </header>
+
+        <nav>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipe-categories.html"> <strong>Recipes</strong> </a></li>
+                <li><a href="tips-and-tricks.html">Tips and Tricks</a></li>
+            </ul>
+
+        </nav>
+
+        <main>
+
+            <div class="recipes-grid">
+
+                <h2 class="recipes-header">Basic and Easy Pie Crust</h2>
+
+                <ul>
+                    <li>2 cups flour</li>
+                    <li>1 tsp. salt</li>
+                    <li>2/3 cup plus 2 Tblsp. shortening (or 5.4 oz. weighed) (I use white Crisco--I buy it in one cup
+                        amounts, three per pack.)</li>
+                    <li>4-5 Tblsp. cold water</li>
+                </ul>
+
+                <img class="recipes-picture" src="images/pie-crust.jpg" alt="Pie Crust">
+
+                <p class="recipe-description">
+                    Cut shortening into the flour and salt mixture. Use fork or pastry cutter to break up all the
+                    shortening until the pieces are very fine, about the size of peas. Add water. Mix with fork, just
+                    until blended. Don’t overmix or over handle. Divide dough in half. Then roll out one for the bottom
+                    and one for the top of the pie, using two pieces of wax paper. Chill crust in pan and top crust
+                    rolled out that is still between wax paper sheets, for at least 45 minutes. Make filling, place on
+                    bottom crust, top with top crust. Makes one 8 or 9 inch two-crust pie. I roll my dough out between
+                    two pieces of wax paper. This makes it easier to roll out and to clean up!
+                </p>
+
+                <h2 class="recipes-header">Apple Pie</h2>
+
+                <ul>
+                    <li>1 pie crust (top and bottom) Use recipe above.</li>
+                    <li>7-8 cups peeled and thinly sliced Fuji apples (4-5 large)</li>
+                    <li>1/2 cup granulated sugar</li>
+                    <li>1/4 lightly packed brown sugar</li>
+                    <li>3 Tblsp. flour</li>
+                    <li>1 tsp. cinnamon</li>
+                    <li>1/4 tsp. nutmeg</li>
+                    <li>1 Tblsp. lemon juice</li>
+                    <li>3/4 tsp. vanilla</li>
+                    <li>1 1/2 Tblsp. butter</li>
+                </ul>
+
+                <img class="recipes-picture" src="images/apple-pie-slice.jpg" alt="Apple Pie Slice">
+
+                <p class="recipe-description">
+                    <strong>Crust:</strong> Line 9 or 10-inch pie pan with bottom crust and set in refrigerator to
+                    chill,
+                    along with the
+                    rolled out top crust that is between wax paper sheets.
+                    <br><br>
+                    <strong>Apple Filling:</strong> In a cereal bowl, mix together the sugars, flour, cinnamon, and
+                    nutmeg.
+                    Melt the
+                    butter in a large cast iron pan (or saucepan) over medium heat. Add the thinly sliced apples and
+                    lemon juice. Use a metal spatula to turn over the apple pieces so they uniformly heat up. Add half
+                    the dry ingredients and mix in before adding the remaining dry ingredients. Cook on medium heat up
+                    to eight minutes, until apples have cooked down in volume. Add the vanilla at the end. Remove from
+                    heat and scrape into a separate bowl or pan to cool to room temperature.
+                    <br><br>
+                    <strong>Bake:</strong> Heat oven to 375°. Pour cooled mixture into pie crust pan. Cover with top
+                    crust.
+                    Remove wax
+                    paper. Use fingers to fold under the excess top crust and then pinch around the edges to seal the
+                    pie crust. Use a sharp knife to make 4-6 slits in top of crust, for steam venting. Cover edges of
+                    pie with foil strips. Place pie on a baking sheet. (I use a jelly roll pan lined with foil in case
+                    the pie drips while cooking) Bake at 375° for 25 minutes. Remove foil strips from the pie edges.
+                    Bake for 40-50 minutes more, or until crust is golden and apples are tender when poked with a fork.
+                    Sometimes the cooking time may be longer, depending on the hardness of the apples, and how thinly
+                    they are sliced. Using the partially cooked apples ensures that they will be cooked through, even if
+                    you don’t poke them through the crust with a fork to check to see if they are tender. I typically
+                    cook it for about 50 minutes because Dan and John like the crust browned. Remove from oven and allow
+                    to cool 2-3 hours.
+                    <br><br>
+                    <strong>Serve</strong> warm or cool with vanilla ice cream. Store at room temperature, covered. (I
+                    cover
+                    it with a
+                    big Tupperware bowl on the counter) Makes 8 servings.
+                </p>
+
+                <h3 class ="comment-header">Leave a comment on this recipe!</h3>
+
+                <div id="feedback"></div>
+
+                <form action="/my-handling-form-page" method="post">
+
+                    <ul>
+
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" />
+                        </li>
+
+                        <li>
+                            <label for="mail">E-mail:</label>
+                            <input type="email" id="mail" name="user_mail" />
+                        </li>
+
+                        <li>
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+
+                        <li class="button">
+                            <button type="submit">Post your comment</button>
+                        </li>
+
+                    </ul>
+
+                </form>
+
+                <script>
+                    const feedbackElement = document.getElementById('feedback');
+                    const formElement = document.forms[0];
+
+                    formElement.addEventListener('submit', function (e) {
+                        e.preventDefault();
+                        feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
+                            '! Your comment has been successfully posted!';
+                        feedbackElement.style.display = "block";
+                    });
+                </script>
+
+            </div>
+
+        </main>
+
+        <footer>
+
+            <div class="social">
+
+                <div class="socialText">
+
+                    © 2020 My Traditional Living - John Ellefson - WDD 130-05
+
+                </div>
+
+                <a href="https://www.facebook.com/" class="socialIcons"> <img src="images/facebook.png"
+                        alt="Facebook Icon" /> </a>
+
+                <a href="https://www.twitter.com/" class="socialIcons"> <img src="images/twitter.png"
+                        alt="Twitter Icon" />
+                </a>
+
+                <a href="https://www.instagram.com/" class="socialIcons"> <img src="images/instagram.png"
+                        alt="Instagram Icon" /> </a>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>My Traditional Living - Home</title>
+
+    <meta name="description"
+        content="Here you can find many amazing recipes with instructions easy enough for those with any level of cooking experience">
+
+    <link href="css/final-site-style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="page-container">
+
+        <header>
+
+            <h1 class="heading">My Traditional Living</h1>
+
+        </header>
+
+        <nav>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipe-categories.html"> <strong>Recipes</strong> </a></li>
+                <li><a href="tips-and-tricks.html">Tips and Tricks</a></li>
+            </ul>
+
+        </nav>
+
+        <main>
+
+            <div class="recipes-grid">
+
+                <h2 class="recipes-header">Enchilada Pasta</h2>
+
+                <p class="recipe-description"> <strong>Author: Joanna Cismaru, adapted from www.jocooks.com</strong>
+                </p>
+
+                <ul>
+                    <li>10-12 oz. uncooked fettuccine noodles</li>
+                    <li>1 Tblsp. olive oil</li>
+                    <li>2 cups cooked chicken chunks, cut against the grain
+                        (from rotisserie or cooked breast, cut into pieces)
+                    </li>
+                    <li>1 small onion, finely chopped</li>
+                    <li>2 garlic cloves, minced</li>
+                    <li>2 cups (or two 10 oz. cans) red enchilada sauce </li>
+                    <li>1/4 cup chicken broth</li>
+                    <li>1 cup heavy cream</li>
+                    <li>1 15-oz. can black beans, drained and rinsed</li>
+                    <li>3/4 cup frozen corn, steamed and ready to add</li>
+                    <li>1/2 cup finely diced tomatoes (minus the gel/seeds parts)</li>
+                    <li>2 cups Tex Mex cheese (or Colby Jack cheese,
+                        shredded)
+                    </li>
+                    <li>2 stalks washed and finely sliced green onions</li>
+                </ul>
+
+                <img class="recipes-picture" src="images/enchilada-pasta-2.jpg" alt="Enchilada Pasta">
+
+                <p>
+                    <strong>Garnish with:</strong>
+                </p>
+
+                <ul>
+                    <li>Crispy tortilla strips</li>
+                    <li>cilantro for garnish </li>
+                    <li>slices of freshly cut lime </li>
+                </ul>
+
+                <p class="recipe-description">
+                    Start by boiling the fettuccine until cooked. Drain and set it aside.
+                    While the noodles are cooking, rinse and drain the black beans, steam the frozen corn, and wash and
+                    cut the onion, green onions, tomatoes, and grate the cheese.
+                    In a separate bowl, mix the enchilada sauce, broth, and heavy cream together.
+                    In a large skillet heat the oil and add the chopped onion. After the onions are soft, add the minced
+                    garlic and cook for another minute.
+                    Add the enchilada mixture to the onion mixture in the large skillet. Then add the warm cooked
+                    fettuccine noodles. Stir and let it cook until the pasta absorbs some of the sauce and it cooks down
+                    a little bit. Then add the warmed chicken chunks, black beans, cooked corn, diced tomatoes, green
+                    onions, and the shredded cheese. Stir gently until heated through. The pasta will absorb most of the
+                    sauce. Serve with crispy tortilla strips or chips. You can also garnish with cilantro and slices of
+                    lime for squeezing over the noodles. If desired, sprinkle additional shredded cheese over the top
+                    and place under the broiler for a couple minutes just until the cheese gets golden.
+                    <br><br>
+                    Adapted from
+                    <br>
+                    <a href="https://www.jocooks.com/ingredient/poultry-main-courses/30-minute-skillet-chicken-enchilada-pasta/">https://www.jocooks.com/ingredient/poultry-main-courses/30-minute-skillet-chicken-enchilada-pasta/</a>
+
+                </p>
+
+                <h3 class="comment-header">Leave a comment on this recipe!</h3>
+
+                <div id="feedback"></div>
+
+                <form action="/my-handling-form-page" method="post">
+
+                    <ul>
+
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" />
+                        </li>
+
+                        <li>
+                            <label for="mail">E-mail:</label>
+                            <input type="email" id="mail" name="user_mail" />
+                        </li>
+
+                        <li>
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+
+                        <li class="button">
+                            <button type="submit">Post your comment</button>
+                        </li>
+
+                    </ul>
+
+                </form>
+
+                <script>
+                    const feedbackElement = document.getElementById('feedback');
+                    const formElement = document.forms[0];
+
+                    formElement.addEventListener('submit', function (e) {
+                        e.preventDefault();
+                        feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
+                            '! Your comment has been successfully posted!';
+                        feedbackElement.style.display = "block";
+                    });
+                </script>
+
+            </div>
+
+        </main>
+
+        <footer>
+
+            <div class="social">
+
+                <div class="socialText">
+
+                    © 2020 My Traditional Living - John Ellefson - WDD 130-05
+
+                </div>
+
+                <a href="https://www.facebook.com/" class="socialIcons"> <img src="images/facebook.png"
+                        alt="Facebook Icon" /> </a>
+
+                <a href="https://www.twitter.com/" class="socialIcons"> <img src="images/twitter.png"
+                        alt="Twitter Icon" />
+                </a>
+
+                <a href="https://www.instagram.com/" class="socialIcons"> <img src="images/instagram.png"
+                        alt="Instagram Icon" /> </a>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

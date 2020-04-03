@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>My Traditional Living - Home</title>
+
+    <meta name="description"
+        content="Here you can find many amazing recipes with instructions easy enough for those with any level of cooking experience">
+
+    <link href="css/final-site-style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="page-container">
+
+        <header>
+
+            <h1 class="heading">My Traditional Living</h1>
+
+        </header>
+
+        <nav>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipe-categories.html"> <strong>Recipes</strong> </a></li>
+                <li><a href="tips-and-tricks.html">Tips and Tricks</a></li>
+            </ul>
+
+        </nav>
+
+        <main>
+
+            <div class="recipes-grid">
+
+                <h2 class="recipes-header">Bacon and Potato Chowder</h2>
+
+                <ul>
+                    <li>1/2 cup onion, finely chopped</li>
+                    <li>1 cup finely chopped/diced celery</li>
+                    <li>2-3 cups peeled and finely diced potatoes
+                        (3 cups to make thicker chowder)
+                    </li>
+                    <li>3/4 cup butter </li>
+                    <li>4.5 oz Cooked bacon pieces</li>
+                    <li>3/4 cup flour</li>
+                    <li>1 quart half and half</li>
+                    <li>1 tsp. salt</li>
+                    <li>1/8 to 1/4 tsp. pepper (preferably white peper)</li>
+                </ul>
+
+                <img class="recipes-picture" src="images/bacon-potato-chowder-2.jpg" alt="Bacon Potato Chowder">
+
+                <p class="recipe-description">
+                    Put the onion, celery, and potatoes in a medium saucepan. Add enough water to cover. Cover and cook
+                    over medium heat until potatoes are tender (about 15-20 minutes. <strong>Do not drain.</strong> In the meantime, melt
+                    butter and add flour. Blend and cook a minute or two. Add half and half and cook. Stir until smooth
+                    and thick using a whip to blend. Add the salt and pepper. Add the cooked bacon pieces and heat
+                    through. Add the <strong>undrained</strong> vegetables. Stir well. Makes 6-8 servings.
+                </p>
+
+                <h3 class="comment-header">Leave a comment on this recipe!</h3>
+
+                <div id="feedback"></div>
+
+                <form action="/my-handling-form-page" method="post">
+
+                    <ul>
+
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" />
+                        </li>
+
+                        <li>
+                            <label for="mail">E-mail:</label>
+                            <input type="email" id="mail" name="user_mail" />
+                        </li>
+
+                        <li>
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+
+                        <li class="button">
+                            <button type="submit">Post your comment</button>
+                        </li>
+
+                    </ul>
+
+                </form>
+
+                <script>
+                    const feedbackElement = document.getElementById('feedback');
+                    const formElement = document.forms[0];
+
+                    formElement.addEventListener('submit', function (e) {
+                        e.preventDefault();
+                        feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
+                            '! Your comment has been successfully posted!';
+                        feedbackElement.style.display = "block";
+                    });
+                </script>
+
+            </div>
+
+        </main>
+
+        <footer>
+
+            <div class="social">
+
+                <div class="socialText">
+
+                    © 2020 My Traditional Living - John Ellefson - WDD 130-05
+
+                </div>
+
+                <a href="https://www.facebook.com/" class="socialIcons"> <img src="images/facebook.png"
+                        alt="Facebook Icon" /> </a>
+
+                <a href="https://www.twitter.com/" class="socialIcons"> <img src="images/twitter.png"
+                        alt="Twitter Icon" />
+                </a>
+
+                <a href="https://www.instagram.com/" class="socialIcons"> <img src="images/instagram.png"
+                        alt="Instagram Icon" /> </a>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

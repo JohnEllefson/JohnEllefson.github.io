@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>My Traditional Living - Home</title>
+
+    <meta name="description"
+        content="Here you can find many amazing recipes with instructions easy enough for those with any level of cooking experience">
+
+    <link href="css/final-site-style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="page-container">
+
+        <header>
+
+            <h1 class="heading">My Traditional Living</h1>
+
+        </header>
+
+        <nav>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipe-categories.html"> <strong>Recipes</strong> </a></li>
+                <li><a href="tips-and-tricks.html">Tips and Tricks</a></li>
+            </ul>
+
+        </nav>
+
+        <main>
+
+            <div class="recipes-grid">
+
+                <h2 class="recipes-header">Dinner Rolls</h2>
+
+                <p>
+                    <strong>In a large mixing bowl, soften until yeast bubbles up and a sponge forms:</strong>
+                </p>
+
+                <ul>
+                    <li>1 Tblsp. yeast (I use instant yeast)</li>
+                    <li>1 cup very warm water (or use very warm milk and omit the powdered milk)</li>
+                    <li>1/4 tsp. sugar</li>
+                    <p> <strong>Add and mix together with the yeast mixture:</strong> </p>
+                    <li>2 cups flour (all-purpose or bread flour—either one works great) </li>
+                    <li>1 1/2 tsp. salt</li>
+                    <li>1/4 cup sugar</li>
+                    <li>3/8 cup powdered milk (a little less than 1/2 cup)</li>
+                    <li>1 beaten egg</li>
+                    <li>1/4 cup vegetable or canola oil</li>
+                </ul>
+
+                <img class="recipes-picture" src="images/dinner-rolls-2.jpg" alt="Dinner Rolls">
+
+                <p class="recipe-description">
+                    Then <strong>add</strong> 1 1/2 cups additional flour
+                    <br><br>
+                    Mix well with a bread dough mixer or by hand. Dough will be a little sticky, but still forms a nice
+                    ball. Knead with flour until you can handle the dough but it still is light and a little sticky. Let
+                    rise 1 hour. Then you can form the rolls.
+                    <br><br>
+                    Mary uses a lightweight aluminum 9x13 pan, sprayed with olive oil spray. She forms the dough into
+                    dinner rolls, lets them rise, and then cooks them at <strong>350° for 12 minutes, then lightly tents
+                        foil
+                        over the top and bakes for 7 more minutes.</strong> She removes them and lets them sit in the
+                    pan while
+                    sitting on a cooling rack while she rubs the tops with butter. The dough this recipe makes is quite
+                    moist and stretchy, and with egg, powdered milk, and extra sugar it has a good flavor to it, fresh
+                    out of the oven as well as after a day or so.
+                    <br><br>
+                    <strong>Dinner Roll shaping and baking:</strong> After removing dough from the bread machine, weigh
+                    the dough anddivide into 15 balls, or just divide the dough into fourths and then divide out as
+                    equally as you can. Slightly flatten each piece; fold in all four sides, pinch together, then
+                    repeat. When nicely shaped, flip over and round into a ball and lightly toss seam side down on the
+                    counter to smooth the bottom. Place seam side down in a greased 9 x 13 pan. Repeat with remaining
+                    dough, placing balls in 3 rows of 5. Mary uses a greased aluminum pan. Mary makes 15 (3 rows of 5)
+                    for rolls large enough to cut open and eat with meat, or to butter and eat with your meal. Cover the
+                    shaped rolls and let rise 20-45 minutes (till almost double). Mary usually heats up the oven to 200°
+                    then turns it off and opens it and lets it cool a while before placing the pan of shaped rolls
+                    covered with a thin towel inside the oven to rise until double. If it is too hot still, leave the
+                    oven open a little bit while they rise. Don’t let them rise too much! When the dough is doubled and
+                    the rolls have filled in the pan, remove the pan and leave it covered with the towel while you
+                    preheat the oven to 350°. Bake at 350° for 12 minutes, and then Mary covers the pan with a loose
+                    piece of foil for an additional 7 minutes of baking so the tops don’t get too browned. Rub tops
+                    with butter and serve hot! These don’t brown much on the bottoms, but we love them moist just the
+                    way they are. These are absolutely fabulous and your family will be in heaven! Best when served hot
+                    from the oven! Great for making sandwiches with ham or roast, or eating with butter or jam. Wrap in
+                    plastic bags and eat within a few days. (saf-instant yeast is tons cheaper to buy on Amazon—2 lbs.
+                    for about $12.)
+
+                </p>
+
+                <h3 class="comment-header">Leave a comment on this recipe!</h3>
+
+                <div id="feedback"></div>
+
+                <form action="/my-handling-form-page" method="post">
+
+                    <ul>
+
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" />
+                        </li>
+
+                        <li>
+                            <label for="mail">E-mail:</label>
+                            <input type="email" id="mail" name="user_mail" />
+                        </li>
+
+                        <li>
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+
+                        <li class="button">
+                            <button type="submit">Post your comment</button>
+                        </li>
+
+                    </ul>
+
+                </form>
+
+                <script>
+                    const feedbackElement = document.getElementById('feedback');
+                    const formElement = document.forms[0];
+
+                    formElement.addEventListener('submit', function (e) {
+                        e.preventDefault();
+                        feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
+                            '! Your comment has been successfully posted!';
+                        feedbackElement.style.display = "block";
+                    });
+                </script>
+
+            </div>
+
+        </main>
+
+        <footer>
+
+            <div class="social">
+
+                <div class="socialText">
+
+                    © 2020 My Traditional Living - John Ellefson - WDD 130-05
+
+                </div>
+
+                <a href="https://www.facebook.com/" class="socialIcons"> <img src="images/facebook.png"
+                        alt="Facebook Icon" /> </a>
+
+                <a href="https://www.twitter.com/" class="socialIcons"> <img src="images/twitter.png"
+                        alt="Twitter Icon" />
+                </a>
+
+                <a href="https://www.instagram.com/" class="socialIcons"> <img src="images/instagram.png"
+                        alt="Instagram Icon" /> </a>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
