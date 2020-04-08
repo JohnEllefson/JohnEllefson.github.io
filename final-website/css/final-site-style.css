@@ -19,6 +19,7 @@ nav ul {
     position: relative;
     right: -60px;
     display: flex;
+    list-style-type: none;
 }
 
 nav li {
@@ -41,7 +42,9 @@ main {
     margin-top: 20px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Tangerine', cursive;
 }
 
@@ -51,8 +54,6 @@ h2 {
 
 h3 {
     font-size: 2.8rem;
-    position: relative;
-    top: -25px;
 }
 
 main img {
@@ -69,6 +70,11 @@ footer {
     border: ridge 7px rgb(97, 97, 97);
     margin-top: 20px;
     margin-bottom: 80px;
+    padding: 20px;
+}
+
+footer a {
+    float: right;
 }
 
 .page-container {
@@ -84,16 +90,23 @@ footer {
     bottom: -30px;
 }
 
-.socialText {
-    position: relative;
-    margin-top: 20px;
+.site-logo {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.socialIcons {
-    margin-left: 20px;
+.category-h3 {
+    font-size: 2.8rem;
     position: relative;
-    right: -670px;
-    top: -10px;
+    top: -25px;
+}
+
+@media screen and (max-width: 550px) {
+
+    img {
+        height: 14em;
+        width: auto;
+    }
 }
 
 
@@ -123,6 +136,7 @@ footer {
     top: -80px;
     left: -25px;
 }
+
 .home-left-img {
     grid-column: 1 / 5;
     grid-row: 1 / 4;
@@ -376,4 +390,49 @@ textarea {
 
 button {
     margin-left: 0.5em;
+}
+
+
+
+/* For The Site Plan */
+
+
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999
+}
+
+.colors td {
+    width: 25%;
+    height: 3em
+}
+
+.primary {
+    background-color: #6600cc;
+    color: #fff;
+}
+
+.secondary {
+    color: #fff;
+    background-color: #000099;
+}
+
+.accent1 {
+    background-color: #cacaca;
+}
+
+.accent2 {
+    background-color: #616161;
+}
+
+main li {
+    position: relative;
+    bottom: -40px;
 }
