@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet');
+
 body {
     font-family: Helvetica, sans-serif;
     margin: auto;
@@ -5,7 +7,6 @@ body {
 }
 
 header {
-    font-size: 1.5em;
     padding: 1px;
 }
 
@@ -19,29 +20,31 @@ header, footer {
     margin-top: 15px;
     margin-bottom: 15px;
     color: rgb(255, 255, 255);
-    border-radius: 20px;
 }
 
 footer a {
     color: rgb(255, 255, 255);
 }
 
-img {
-    float: right;
-    box-shadow: 0px 0px 15px black
+h1, h2, h3 {
+    font-family: Roboto Mono, monospace, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 1.8em;
 }
 
 h2 {
     border-bottom: 1px solid rgb(163, 163, 163);
+    font-size: 1em;
 }
 
 .header-img {
     position: relative;
-    left: -15px;
-    bottom: -15px;
+    right: -170px
 }
 
 .header-title {
     position: relative;
-    right: -100px;
+    right: -140px;
 }
