@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet');
 
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: Roboto Mono, monospace, Helvetica, sans-serif;
     margin: auto;
     max-width: 1000px;
 }
 
 main {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 20px;
 }
 
@@ -21,7 +21,8 @@ section {
     background-color: rgb(204, 204, 204);
     border: 1.5px solid rgb(129, 129, 129);
     border-radius: 25px;
-    padding: 10px;
+    padding: 20px;
+    margin: 20px;
 }
 
 footer {
@@ -49,52 +50,19 @@ img {
     width: 100%;
 }
 
-h1,
-h2,
-h3 {
-    font-family: Roboto Mono, monospace, Helvetica, sans-serif;
+p {
+    font-size: 1.1em;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 h2 {
-    font-size: 1.7em;
+    font-size: 1.6em;
     text-align: center;
 }
 
 h3 {
-    font-size: 1.3em;
-}
-
-@media only screen and (min-width: 20em) {
-    main {
-        grid-template-columns: 1fr;
-    }
-
-    section {
-        margin: 10px;
-    }
-
-}
-
-@media only screen and (min-width: 50em) {
-    main {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    section {
-        margin: 10px;
-    }
-}
-
-@media only screen and (min-width: 70em) {
-    main {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    section {
-        margin: 0px;
-    }
+    font-size: 1.2em;
 }
