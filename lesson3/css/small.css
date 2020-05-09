@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Volkhov&family=Libre+Baskerville&display=swap');
+
+body {
+    background-color: rgb(154, 199, 207);
+    max-width: 950px;
+    margin: auto;
+}
+
+header,
+footer {
+    background-color: rgb(55, 131, 167);
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    grid-gap: 25px;
+    max-height: 200px;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+header img {
+    height: 100%;
+    width: auto;
+}
+
+nav {
+    text-align: center;
+    background-color: #39627e;
+    font-size: 1.1em;
+    font-family: Libre Baskerville, Helvetica, sans-serif;
+}
+
+nav ul {
+    display: grid;
+    overflow: hidden;
+    list-style-type: none;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px;
+    margin-top: 8px;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+	color: rgb(255, 255, 255);
+	padding: 0.8rem;
+}
+
+nav a:hover {
+	background-color: rgb(203, 206, 219);
+	color: #2d3336;
+}
+
+h1, h2, h3, h4 {
+    font-family: Volkhov, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 1.3em;
+}
+
+h2 {
+    font-size: 0.8em;
+}
+
+main {
+    display: grid;
+    grid-gap: 15px;
+}
+
+article {
+    background-color: rgb(69, 104, 202);
+    padding: 20px;
+    text-align: center;
+}
+
+p, li {
+    font-size: 0.8em;
+    font-family: Bitter, Helvetica, sans-serif;
+}
+
+table {
+    margin: auto;
+}
+
+th {
+    background-color: rgb(133, 133, 133);
+}
+
+td, th {
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 1.2em;
+}
+
+.alt-grid img {
+    height: 100%;
+    width: auto;
+}
+
+.selected-page {
+    color: rgb(236, 200, 39);
+}
+
+
+
+/* Used for the Color Scheme and Typography page */
+
+
+
+.alt-grid {
+    grid-column: 1 / 3;
+}
+
+.alt-grid img {
+    box-shadow: 0 3px 25px rgb(0, 0, 0);
+}
+
+
+
+/* Used for the Color Scheme page */
+
+
+
+.primary {
+    background-color: rgb(154, 199, 207);
+}
+
+.secondary {
+    background-color: rgb(55, 131, 167);
+}
+
+.accent1 {
+    background-color: #39627e;
+}
+
+.accent2 {
+    background-color: rgb(69, 104, 202);
+}
+
+.accent3 {
+    background-color: rgb(203, 206, 219);
+}
+
+
+
+/* Used for the Typography page */
+
+
+
+.volkhov {
+    font-family: Volkhov, Helvetica, sans-serif;
+}
+
+.libre-baskerville {
+    font-family: Libre Baskerville, Helvetica, sans-serif;
+}
+
+.bitter {
+    font-family: Bitter, Helvetica, sans-serif;
+}
+
+/* For the Personas and Scenarios */
+.left-align {
+    text-align: left;
+}
