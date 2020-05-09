@@ -82,6 +82,7 @@ article {
 p, li {
     font-size: 0.8em;
     font-family: Bitter, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
 }
 
 footer {
