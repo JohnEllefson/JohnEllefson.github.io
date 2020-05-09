@@ -15,4 +15,9 @@
     li {
         font-size: 1.2em;
     }
+
+    td, th {
+        padding: 10px;
+        font-size: 1.5em;
+    }
 }
