@@ -97,6 +97,10 @@ footer {
     color: rgb(236, 200, 39);
 }
 
+footer a:visited {
+    color: rgb(68, 31, 155);
+  }
+
 
 
 /* Used for the Color Scheme and Typography page */
