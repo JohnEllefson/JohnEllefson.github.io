@@ -61,15 +61,15 @@ h4 {
 }
 
 h1 {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 h2 {
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 h3 {
-    font-size: 0.8em;
+    font-size: 1.1em;
 }
 
 main,
@@ -82,7 +82,7 @@ footer {
 article {
     display: flex;
     background-color: rgb(69, 104, 202);
-    padding: 20px;
+    padding: 15px;
     margin: 10px;
     border: 5px ridge #39627e;
 }
