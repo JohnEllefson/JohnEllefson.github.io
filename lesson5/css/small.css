@@ -2,7 +2,6 @@
 
 body {
     background-color: rgb(154, 199, 207);
-    color: rgb(255, 255, 255);
 }
 
 header,
@@ -83,14 +82,10 @@ footer {
     color: rgb(0, 0, 0);
 }
 
-footer a:hover {
-    color: #ffffff;
-}
-
 article {
     display: flex;
     flex-direction: column;
-    background-color: rgb(83, 123, 233);
+    background-color: rgb(82, 114, 202);
     padding: 15px;
     margin: 10px;
     border: 5px ridge #39627e;
@@ -166,7 +161,7 @@ footer a:hover {
     background-color: rgb(31, 124, 67);
     padding: 5px;
     border: 2px solid rgb(0, 0, 0);
-    opacity: 0.78;
+    opacity: 0.78px;
     line-height: 10px;
     font-size: 0.8em;
 }
@@ -212,7 +207,7 @@ footer a:hover {
 
 #top-notification {
     background-color: rgb(255, 208, 0);
-    font-size: 1;
+    font-size: 1em;
     padding: 5px;
     color: rgb(0, 0, 0);
     text-align: center;
