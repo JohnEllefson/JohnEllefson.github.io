@@ -28,7 +28,13 @@
     }
 
     header img {
-        height: 90%;
+        height: 80%;
+    }
+
+    table img {
+        height: 80%;
+        width: auto;
+        border: none;
     }
 
     .header-text h3 {
@@ -46,5 +52,38 @@
 
     .nav-bar li:first-child {
         display: none;
+    }
+
+    .forecast {
+        display: flex;
+    }
+
+    .weather-summary {
+        left: 20px;
+        top: 20px;
+        padding: 10px;
+        line-height: 19px;
+        font-size: 0.85em;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-grid h3, p {
+        grid-column: 2 / 3;
+    }
+
+    .contact-grid img {
+        display: block;
+        grid-column: 1 / 2;
+        padding: 10px;
+        padding-left: 40px;
+    }
+
+    #top-notification {
+        font-size: 1.2em;
+        padding: 10;
     }
 }

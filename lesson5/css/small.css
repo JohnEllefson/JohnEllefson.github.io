@@ -2,7 +2,7 @@
 
 body {
     background-color: rgb(154, 199, 207);
-
+    color: rgb(255, 255, 255);
 }
 
 header,
@@ -62,14 +62,17 @@ h4 {
 
 h1 {
     font-size: 1.5em;
+    color: rgb(0, 0, 0);
 }
 
 h2 {
     font-size: 1.3em;
+    color: rgb(0, 0, 0);
 }
 
 h3 {
     font-size: 1em;
+    color: rgb(0, 0, 0);
 }
 
 main,
@@ -77,14 +80,44 @@ footer {
     max-width: 950px;
     margin: auto;
     text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+footer a:hover {
+    color: #ffffff;
 }
 
 article {
     display: flex;
-    background-color: rgb(76, 115, 221);
+    flex-direction: column;
+    background-color: rgb(83, 123, 233);
     padding: 15px;
     margin: 10px;
     border: 5px ridge #39627e;
+}
+
+.forecast table {
+    border: 3px solid #181818;
+}
+
+.forecast td {
+    border: 2px solid #181818;
+}
+
+.forecast table tbody {
+    background-color: rgb(79, 187, 230);
+}
+
+.forecast {
+    display: none;
+}
+
+table {
+    color: rgb(0, 0, 0);
+}
+
+table thead {
+    background-color: rgb(64, 142, 179);
 }
 
 p,
@@ -109,8 +142,33 @@ footer a:visited {
     color: rgb(42, 5, 46);
 }
 
-.selected-page {
+footer a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.highlighted-text {
     color: rgb(236, 200, 39);
+}
+
+.hero-banner {
+    position: relative;
+    padding: 0px;
+}
+
+.hero-banner img {
+    width: 100%;
+}
+
+.weather-summary {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    background-color: rgb(31, 124, 67);
+    padding: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    opacity: 0.78;
+    line-height: 10px;
+    font-size: 0.8em;
 }
 
 .header-text {
@@ -136,4 +194,26 @@ footer a:visited {
 
 .responsive li {
     display: block;
+}
+
+.preston-article {
+    display: block;
+    grid-gap: 10px;
+}
+
+.preston-article img {
+    padding: 10px;
+    float: right;
+}
+
+.contact-grid img {
+    display: none;
+}
+
+#top-notification {
+    background-color: rgb(255, 208, 0);
+    font-size: 1;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
 }

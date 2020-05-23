@@ -12,3 +12,9 @@ const menubutton = document.querySelector('.response');
 const nav = document.querySelector('.nav-bar')
 
 menubutton.addEventListener('click', () => {nav.classList.toggle('responsive')}, false);
+
+// Displays notification at the top of the page only on Fridays
+if (new Date().getDay() != 5)
+{
+    document.getElementById("top-notification").style.display = 'none';
+}

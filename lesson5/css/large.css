@@ -28,5 +28,24 @@
 
     header img {
         height: 100%;
+        width: auto;
+    }
+
+    table img {
+        height: 100%;
+        width: auto;
+    }
+
+    .weather-summary {
+        left: 30px;
+        top: 30px;
+        padding: 15px;
+        line-height: 7px;
+        font-size: 0.9;
+    }
+
+    #top-notification {
+        font-size: 1.4em;
+        padding: 15px;
     }
 }
