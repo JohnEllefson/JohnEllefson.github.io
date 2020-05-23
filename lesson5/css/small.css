@@ -89,6 +89,7 @@ article {
     padding: 15px;
     margin: 10px;
     border: 5px ridge #39627e;
+    overflow: none;
 }
 
 .forecast table {
@@ -194,6 +195,7 @@ footer a:hover {
 .preston-article {
     display: block;
     grid-gap: 10px;
+    min-height: 350px;
 }
 
 .preston-article img {
