@@ -75,11 +75,15 @@
         grid-column: 2 / 3;
     }
 
-    .contact-grid img {
+    .map-image {
         display: block;
         grid-column: 1 / 2;
         padding: 10px;
         padding-left: 40px;
+    }
+
+    .social-icons {
+        grid-column: 2 / 4;
     }
 
     #top-notification {

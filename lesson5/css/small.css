@@ -202,13 +202,12 @@ footer a:hover {
     float: right;
 }
 
-.contact-grid img {
+.map-image {
     display: none;
 }
 
-.social-icons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.social-icons img {
+    padding: 5px;
 }
 
 #top-notification {
