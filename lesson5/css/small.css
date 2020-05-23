@@ -206,6 +206,11 @@ footer a:hover {
     display: none;
 }
 
+.social-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 #top-notification {
     background-color: rgb(255, 208, 0);
     font-size: 1em;
