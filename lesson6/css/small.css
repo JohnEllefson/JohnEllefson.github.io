@@ -1,0 +1,218 @@
+body {
+    background-color: rgb(154, 199, 207);
+}
+
+header,
+footer {
+    background-color: rgb(55, 131, 167);
+}
+
+header {
+    display: flex;
+    padding-left: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+}
+
+header img {
+    height: 70%;
+    width: auto;
+    padding-left: 20px;
+}
+
+nav {
+    text-align: center;
+    background-color: #39627e;
+    font-size: 1.1em;
+    font-family: Libre Baskerville, Helvetica, sans-serif;
+    margin-bottom: 35px;
+}
+
+nav ul {
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 0.8rem;
+}
+
+nav a:hover {
+    background-color: rgb(203, 206, 219);
+    color: #2d3336;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Volkhov, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    font-size: 1.3em;
+    color: rgb(0, 0, 0);
+}
+
+h3 {
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+}
+
+main,
+footer {
+    max-width: 950px;
+    margin: auto;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(82, 114, 202);
+    padding: 15px;
+    margin: 15px;
+    border: 5px ridge #39627e;
+    overflow: hidden;
+}
+
+.forecast table {
+    border: 3px solid #181818;
+}
+
+.forecast td {
+    border: 2px solid #181818;
+}
+
+.forecast table tbody {
+    background-color: rgb(79, 187, 230);
+}
+
+.forecast {
+    display: none;
+}
+
+table {
+    color: rgb(0, 0, 0);
+}
+
+table thead {
+    background-color: rgb(64, 142, 179);
+}
+
+p,
+article li {
+    font-size: 0.8em;
+    font-family: Bitter, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 1.2em;
+}
+
+footer a:link {
+    color: rgb(12, 3, 46);
+}
+
+footer a:visited {
+    color: rgb(42, 5, 46);
+}
+
+footer a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.highlighted-text {
+    color: rgb(236, 200, 39);
+}
+
+.hero-banner {
+    position: relative;
+    padding: 0px;
+}
+
+.hero-banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.weather-summary {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    background-color: rgb(82, 114, 202);
+    padding: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    opacity: 0.78;
+    line-height: 10px;
+    font-size: 0.8em;
+}
+
+.header-text {
+    margin: 30px;
+}
+
+.header-text h3 {
+    margin-top: -10px;
+}
+
+.nav-bar {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.nav-bar li:first-child {
+    display: block;
+}
+
+.nav-bar li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+.preston-article {
+    display: block;
+    min-height: 350px;
+}
+
+.preston-article img {
+    padding: 10px;
+    float: right;
+}
+
+.map-image {
+    display: none;
+}
+
+.social-icons img {
+    padding: 5px;
+}
+
+#top-notification {
+    background-color: rgb(255, 208, 0);
+    font-size: 1em;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
