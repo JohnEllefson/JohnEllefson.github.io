@@ -1,0 +1,48 @@
+body {
+    font-size: 1.7em;
+    font-family: "Ubuntu", sans-serif;
+}
+
+table {
+    margin: 0px auto;
+    text-align: center;
+    box-shadow: 12px 12px 14px 0px #628ca6;
+    background-color: rgb(206, 206, 206);
+}
+
+caption {
+    color: black;
+    background-color: #7fb9c2;
+    padding: 15px;
+    font-size: 1.4em;
+    margin-top: 40px;
+}
+
+th {
+    background-color: #628ca6;
+    color: white;
+    padding: 11px;
+}
+
+td {
+    font-size: 0.9em;
+    padding: 11px;
+}
+
+tbody tr {
+    background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: #e7ffed;
+}
+
+tfoot {
+    font-size: 0.76em;
+    background-color: #7fb9c2;
+}
+
+.highlighted {
+    background-color: #628ca6;
+    color: white;
+}
