@@ -8,6 +8,7 @@ table {
     text-align: center;
     box-shadow: 12px 12px 14px 0px #628ca6;
     background-color: rgb(206, 206, 206);
+    border-collapse: collapse;
 }
 
 caption {
@@ -16,17 +17,21 @@ caption {
     padding: 15px;
     font-size: 1.5em;
     margin-top: 40px;
+    box-shadow: 12px 12px 14px 0px #628ca6;
+    border: solid 1px rgb(184, 184, 184);
 }
 
 th {
     background-color: #628ca6;
     color: white;
     padding: 11px;
+    border: solid 1px rgb(184, 184, 184);
 }
 
 td {
     font-size: 0.9em;
     padding: 11px;
+    border: solid 1px rgb(184, 184, 184);
 }
 
 tbody tr {
