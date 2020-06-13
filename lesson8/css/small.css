@@ -258,7 +258,7 @@ footer a:hover {
     font-size: 0.9em;
 }
 
-.storm-center-form fieldset {
+.storm-center-form .form-background {
     margin: 0px auto;
     background-color: rgb(133, 172, 187);
     width: 200px;
