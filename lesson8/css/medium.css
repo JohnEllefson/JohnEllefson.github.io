@@ -95,4 +95,12 @@
     .img-gallery-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .storm-center-form fieldset {
+        width: 350px;
+    }
+
+    .storm-center-form {
+        font-size: 1.1em;
+    }
 }

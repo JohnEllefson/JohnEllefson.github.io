@@ -73,6 +73,11 @@ h3 {
     color: rgb(0, 0, 0);
 }
 
+h4 {
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+}
+
 main,
 footer {
     max-width: 960px;
@@ -248,3 +253,19 @@ footer a:hover {
 .img-gallery-grid img[data-src] {
     filter: blur(0.2em);
 }
+
+.storm-center-form {
+    font-size: 0.9em;
+}
+
+.storm-center-form fieldset {
+    margin: 0px auto;
+    background-color: rgb(133, 172, 187);
+    width: 200px;
+}
+
+.storm-center-form textarea {
+    height: 90px;
+    width: 70%;
+}
+
