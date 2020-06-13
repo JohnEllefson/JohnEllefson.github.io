@@ -71,48 +71,72 @@
 
       <form method="GET" action="thanks.html">
 
-        <lable>
+        <label>
+
           Full Name:
+
+          <br>
+
           <input type="text" name="username" placeholder="Enter your full name" pattern="[A-Za-z ]{5,}" required>
 
-        </lable>
+        </label>
 
-        <br><br>
+        <br>
 
-        <lable>
+        <label>
+
           Email:
+
+          <br>
+
           <input type="email" name="useremail" placeholder="email@RainOrShine.com">
 
-        </lable>
+        </label>
 
-        <br><br>
+        <br>
 
-        <lable>
+        <label>
+
           Phone Number:
+
+          <br>
+
           <input type="tel" name="phonenumber" required>
 
-        </lable>
+        </label>
 
-        <br><br>
+        <br>
 
-        <lable>
+        <label>
+
           Zip Code:
+
+          <br>
+
           <input type="number" name="zip" required>
 
-        </lable>
+        </label>
 
-        <br><br>
+        <br>
 
-        <lable>
+        <label>
+
           Storm Date:
+
+          <br>
+
           <input type="date" name="date">
 
-        </lable>
+        </label>
 
-        <br><br>
+        <br>
 
-        <lable>
+        <label>
+
           Storm Type:
+
+          <br>
+
           <input name="stormtype" list="storms">
 
           <datalist id="storms">
@@ -125,22 +149,29 @@
 
           </datalist>
 
-        </lable>
+        </label>
 
-        <br><br>
+        <br>
 
         <label>
+
           Storm Severity:
+
+          <br>
+
           <input type="range" name="severity" id="rating" value="1" min="1" max="10" oninput="adjustRating(this.value)"
             onchange="adjustRating(this.value)">
           <span id="ratingvalue">1</span>
 
         </label>
 
-        <br><br>
+        <br>
 
-        <lable>
+        <label>
+
           Storm Region:
+
+          <br>
 
           <select name="stormregion">
             <option value="" disabled selected>Select Region ...</option>
@@ -149,9 +180,9 @@
             <option value="Fish Haven">Fish Haven</option>
           </select>
 
-        </lable>
+        </label>
 
-        <br><br>
+        <br>
 
         User in-danger level:
 
@@ -174,21 +205,19 @@
 
         <br><br>
 
-        <lable>
+        <label>
           Comments:
           <br>
           <textarea placeholder="Please enter and additional comments you may have here." size="30"></textarea>
-        </lable>
+        </label>
 
+        <br>
 
-
-        <br><br>
-
-        <lable>
+        <label>
 
           <input type="submit" name="submit" value="Submit Weather Report">
 
-        </lable>
+        </label>
 
       </form>
 
