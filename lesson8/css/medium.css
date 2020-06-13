@@ -96,10 +96,6 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .storm-center-form .form-background {
-        width: 350px;
-    }
-
     .storm-center-form {
         font-size: 1.1em;
     }
