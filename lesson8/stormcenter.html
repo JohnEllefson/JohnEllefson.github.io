@@ -71,112 +71,106 @@
 
       <form method="GET" action="thanks.html">
 
-        <div class="form-background">
+        <lable>
+          Full Name:
+          <input type="text" name="username" placeholder="Enter your full name" pattern="[A-Za-z ]{5,}" required>
 
-          <lable>
-            Full Name:
-            <input type="text" name="username" placeholder="Enter your full name" pattern="[A-Za-z ]{5,}" required>
+        </lable>
 
-          </lable>
+        <br><br>
 
-          <br><br>
+        <lable>
+          Email:
+          <input type="email" name="useremail" placeholder="email@RainOrShine.com">
 
-          <lable>
-            Email:
-            <input type="email" name="useremail" placeholder="email@RainOrShine.com">
+        </lable>
 
-          </lable>
+        <br><br>
 
-          <br><br>
+        <lable>
+          Phone Number:
+          <input type="tel" name="phonenumber" required>
 
-          <lable>
-            Phone Number:
-            <input type="tel" name="phonenumber" required>
+        </lable>
 
-          </lable>
+        <br><br>
 
-          <br><br>
+        <lable>
+          Zip Code:
+          <input type="number" name="zip" required>
 
-          <lable>
-            Zip Code:
-            <input type="number" name="zip" required>
+        </lable>
 
-          </lable>
+        <br><br>
 
-          <br><br>
+        <lable>
+          Storm Date:
+          <input type="date" name="date">
 
-          <lable>
-            Storm Date:
-            <input type="date" name="date">
+        </lable>
 
-          </lable>
+        <br><br>
 
-          <br><br>
+        <lable>
+          Storm Type:
+          <input name="stormtype" list="storms">
 
-          <lable>
-            Storm Type:
-            <input name="stormtype" list="storms">
+          <datalist id="storms">
 
-            <datalist id="storms">
+            <option value="Flash Flood">
+            <option value="Hail">
+            <option value="Hurricane">
+            <option value="Thunderstorm">
+            <option value="Tornado">
 
-              <option value="Flash Flood">
-              <option value="Hail">
-              <option value="Hurricane">
-              <option value="Thunderstorm">
-              <option value="Tornado">
+          </datalist>
 
-            </datalist>
+        </lable>
 
-          </lable>
+        <br><br>
 
-          <br><br>
+        <label>
+          Storm Severity:
+          <input type="range" name="severity" id="rating" value="1" min="1" max="10" oninput="adjustRating(this.value)"
+            onchange="adjustRating(this.value)">
+          <span id="ratingvalue">1</span>
 
-          <label>
-            Storm Severity:
-            <input type="range" name="severity" id="rating" value="1" min="1" max="10"
-              oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-            <span id="ratingvalue">1</span>
+        </label>
 
-            </lable>
+        <br><br>
 
-            <br><br>
+        <lable>
+          Storm Region:
 
-            <lable>
-              Storm Region:
+          <select name="stormregion">
+            <option value="" disabled selected>Select Region ...</option>
+            <option value="Preston">Preston</option>
+            <option value="Soda Springs">Soda Springs</option>
+            <option value="Fish Haven">Fish Haven</option>
+          </select>
 
-              <select name="stormregion">
-                <option value="" disabled selected>Select Region ...</option>
-                <option value="Preston">Preston</option>
-                <option value="Soda Springs">Soda Springs</option>
-                <option value="Fish Haven">Fish Haven</option>
-              </select>
+        </lable>
 
-            </lable>
+        <br><br>
 
-            <br><br>
+        User in-danger level:
 
-            <lable>
+        <br>
 
-              User in-danger level:
+        <label>
+          <input type="radio" name="danger" value="yes">
+          Yes
+        </label>
 
-              <br>
+        <label>
+          <input type="radio" name="danger" value="maybe">
+          Maybe
+        </label>
 
-              <label>
-                <input type="radio" name="danger" value="yes">
-                Yes
-              </label>
-
-              <label>
-                <input type="radio" name="danger" value="maybe">
-                Maybe
-              </label>
-
-              <label>
-                <input type="radio" name="danger" value="no">
-                No
-              </label>
-
-        </div>
+        <label>
+          <input type="radio" name="danger" value="no">
+          No
+        </label>
 
         <br><br>
 
@@ -186,7 +180,7 @@
           <textarea placeholder="Please enter and additional comments you may have here." size="30"></textarea>
         </lable>
 
-        </lable>
+
 
         <br><br>
 
