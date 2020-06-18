@@ -1,0 +1,59 @@
+@media only screen and (min-width: 55em) {
+    header {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.9em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    p,
+    li {
+        font-size: 1.2em;
+    }
+
+    td,
+    th {
+        padding: 10px;
+        font-size: 1.5em;
+    }
+
+    header img {
+        height: 100%;
+        width: auto;
+    }
+
+    table img {
+        height: 100%;
+        width: auto;
+    }
+
+    .weather-summary {
+        left: 30px;
+        top: 30px;
+        padding: 15px;
+        line-height: 7px;
+        font-size: 0.9em;
+    }
+
+    #top-notification {
+        font-size: 1.4em;
+        padding: 15px;
+    }
+
+    .img-gallery-grid div:hover {
+        box-shadow: 0px 0px 10px 1px;
+    }
+
+    .img-gallery-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
