@@ -127,14 +127,6 @@ article li {
     color: rgb(255, 255, 255);
 }
 
-article a:link {
-    color: rgb(12, 3, 46);
-}
-
-article a:visited {
-    color: rgb(42, 5, 46);
-}
-
 footer {
     padding: 15px;
     margin-top: 20px;
@@ -155,7 +147,7 @@ footer a:hover {
 }
 
 .highlighted-text {
-    color: rgb(236, 200, 39);
+    color: rgb(240, 203, 40);
 }
 
 .hero-banner {
