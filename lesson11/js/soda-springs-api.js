@@ -1,5 +1,5 @@
 // Recieving Weather Summary Data
-const weatherapiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=3d24da718e3087a672a2f05aa9ca642c";
+const weatherapiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&APPID=3d24da718e3087a672a2f05aa9ca642c";
 
 fetch(weatherapiURL)
     .then((response) => response.json())
@@ -14,7 +14,7 @@ fetch(weatherapiURL)
 
 
 // Recieving 5 Day Forecast Data    
-const forecastapiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=3d24da718e3087a672a2f05aa9ca642c";
+const forecastapiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&APPID=3d24da718e3087a672a2f05aa9ca642c";
 
 fetch(forecastapiURL)
     .then((response) => response.json())
@@ -50,7 +50,7 @@ fetch(requestURL)
     .then(function (jsonObject) {
 
         const towns = jsonObject['towns'];
-        towns.filter(town => (town.name == 'Preston')).forEach(town => {
+        towns.filter(town => (town.name == 'Soda Springs')).forEach(town => {
 
             let townInfo = document.createElement('div');
             let h2 = document.createElement('h2');

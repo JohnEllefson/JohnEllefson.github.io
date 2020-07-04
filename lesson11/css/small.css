@@ -157,14 +157,13 @@ footer a:hover {
 }
 
 .hero-banner img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
 }
 
 .weather-summary {
     position: absolute;
-    left: 3px;
-    top: 3px;
+    left: 5px;
+    top: 5px;
     background-color: rgb(82, 114, 202);
     padding: 5px;
     border: 2px solid rgb(0, 0, 0);
@@ -202,14 +201,10 @@ footer a:hover {
 
 
 
-.preston-article {
-    display: block;
-    min-height: 350px;
-}
 
-.preston-article img {
-    padding: 10px;
-    float: right;
+
+.event-article {
+display: block;
 }
 
 .map-image {
@@ -342,4 +337,10 @@ cite {
     max-width: 400px;
     width: 100%;
     margin: auto;
+}
+
+
+
+.events {
+    line-height: 30px;
 }
