@@ -64,3 +64,4 @@ fetch(requestURL)
             document.querySelector('article.events').appendChild(townInfo);
         });
     });
+    
