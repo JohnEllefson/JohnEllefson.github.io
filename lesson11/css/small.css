@@ -204,7 +204,15 @@ footer a:hover {
 
 
 .event-article {
-display: block;
+    display: block;
+}
+
+.contact-grid h3 {
+    font-size: 1.4em;
+}
+
+.contact-grid p {
+    font-size: 1.2em;
 }
 
 .map-image {
@@ -265,7 +273,8 @@ display: block;
     padding-left: 50px;
 }
 
-.storm-center-form input, textarea {
+.storm-center-form input,
+textarea {
     padding: 10px;
 }
 

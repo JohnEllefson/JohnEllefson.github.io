@@ -5,7 +5,7 @@ fetch(weatherapiURL)
     .then((response) => response.json())
     .then((jsObject) => {
 
-        document.getElementById('currentWeather').textContent = jsObject.weather[0].main;
+        document.getElementById('currentWeather').textContent = jsObject.weather[0].description;
         document.getElementById('temp').textContent = jsObject.main.temp.toFixed(0);
         document.getElementById('humidityLevel').textContent = jsObject.main.humidity;
         document.getElementById('windSpeed').textContent = jsObject.wind.speed.toFixed(0);
@@ -53,12 +53,12 @@ fetch(requestURL)
         towns.filter(town => (town.name == 'Soda Springs')).forEach(town => {
 
             let townInfo = document.createElement('div');
-            let h2 = document.createElement('h2');
+            let h3 = document.createElement('h3');
             let townEvents = document.createElement('p');
 
-            h2.textContent = 'Upcoming Events'
+            h3.textContent = 'Upcoming Events'
             townEvents.innerHTML = `${town.events[0]}<br>${town.events[1]}<br>${town.events[2]}`;
-            townInfo.appendChild(h2);
+            townInfo.appendChild(h3);
             townInfo.appendChild(townEvents);
 
             document.querySelector('article.events').appendChild(townInfo);
