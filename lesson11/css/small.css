@@ -96,6 +96,10 @@ article {
     overflow: hidden;
 }
 
+.article-link {
+    color: rgb(255, 255, 59)
+}
+
 .forecast table {
     border: 3px solid #181818;
 }
@@ -299,7 +303,8 @@ input:required:valid {
 
 
 cite {
-    font-size: 1.1em;
+    font-size: 1.3em;
+    line-height: 25px;
 }
 
 .home-news {
@@ -312,14 +317,6 @@ cite {
 
 .home-news p {
     grid-column: 1 / 3;
-}
-
-.home-news a:link {
-    color: rgb(255, 255, 59)
-}
-
-.home-news a:visited {
-    color: rgb(235, 235, 72)
 }
 
 .home-news img {
