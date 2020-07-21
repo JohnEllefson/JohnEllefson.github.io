@@ -1,75 +1,52 @@
 {
-    "rentals": [{
+    "rentals": [
+        {
             "name": "hondaMetro",
             "maxPersons": 1,
-            "reservation": {
-                "halfDay": 20,
-                "fullDay": 30
-            },
-            "walkIn": {
-                "halfDay": 25,
-                "fullDay": 35
-            }
+            "reservationHalfDay": 20,
+            "reservationFullDay": 30,
+            "walkInHalfDay": 25,
+            "walkInFullDay": 35
         },
         {
             "name": "hondaDio",
             "maxPersons": 2,
-            "reservation": {
-                "halfDay": 30,
-                "fullDay": 40
-            },
-            "walkIn": {
-                "halfDay": 35,
-                "fullDay": 45
-            }
+            "reservationHalfDay": 30,
+            "reservationFullDay": 40,
+            "walkInHalfDay": 35,
+            "walkInFullDay": 45
         },
         {
             "name": "hondaPCX150",
             "maxPersons": 2,
-            "reservation": {
-                "halfDay": 40,
-                "fullDay": 50
-            },
-            "walkIn": {
-                "halfDay": 45,
-                "fullDay": 55
-            }
+            "reservationHalfDay": 40,
+            "reservationFullDay": 50,
+            "walkInHalfDay": 45,
+            "walkInFullDay": 55
         },
         {
             "name": "pioneerATV",
             "maxPersons": 4,
-            "reservation": {
-                "halfDay": 50,
-                "fullDay": 70
-            },
-            "walkIn": {
-                "halfDay": 60,
-                "fullDay": 80
-            }
+            "reservationHalfDay": 50,
+            "reservationFullDay": 70,
+            "walkInHalfDay": 60,
+            "walkInFullDay": 80
         },
         {
             "name": "jeepWrangler2Door",
             "maxPersons": 4,
-            "reservation": {
-                "halfDay": 60,
-                "fullDay": 85
-            },
-            "walkIn": {
-                "halfDay": 70,
-                "fullDay": 90
-            }
+            "reservationHalfDay": 60,
+            "reservationFullDay": 85,
+            "walkInHalfDay": 70,
+            "walkInFullDay": 90
         },
         {
             "name": "jeepWrangler4Door",
             "maxPersons": 5,
-            "reservation": {
-                "halfDay": 70,
-                "fullDay": 100
-            },
-            "walkIn": {
-                "halfDay": 85,
-                "fullDay": 125
-            }
+            "reservationHalfDay": 70,
+            "reservationFullDay": 100,
+            "walkInHalfDay": 85,
+            "walkInFullDay": 125
         }
     ]
 }

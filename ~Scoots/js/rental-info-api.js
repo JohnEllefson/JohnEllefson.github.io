@@ -2,34 +2,19 @@ fetch("https://raw.githubusercontent.com/JohnEllefson/JohnEllefson.github.io/mas
     .then((response) => response.json())
     .then((jsObject) => {
 
-
-        //document.getElementById(`max-persons${1}`).textContent = 10;
-        
-        //const rentalsList = jsonObject['rentals'];
+        const rentalsList = jsObject['rentals'];
         let rentalNum = 0;
 
+        rentalsList.forEach(rental => {
+
+            document.getElementById(`max-persons${rentalNum + 1}`).textContent = rental.maxPersons;
+            document.getElementById(`reservation-half-day${rentalNum + 1}`).textContent = rental.reservation.halfDay;
+            //document.getElementById(`reservation-full-day${rentalNum + 1}`).textContent = rental.reservation.fullDay;
+            //document.getElementById(`walkIn-half-day${rentalNum + 1}`).textContent = rental.walkIn.halfDay;
+            //document.getElementById(`walkIn-half-day${rentalNum + 1}`).textContent = rental.walkIn.fullDay;
 
 
 
-        document.getElementById(`max-persons${1}`).textContent = rentals[0].maxPersons;
-
-
-
-
-
-
-        //rentalsList.forEach(vehical => {
-            
-        //rentalsList.filter(rental => (rental.name == 'hondaMetro')).forEach(rental => {
-
-        //document.getElementById(`max-persons${1}`).textContent = maxPersons;
-        //document.getElementById(`reservation-half-day${rentalNum}`).textContent = vehical.reservation.halfDay;
-        //document.getElementById(`reservation-full-day${rentalNum}`).textContent = vehical.reservation.fullDay;
-        //document.getElementById(`walkIn-half-day${rentalNum}`).textContent = vehical.walkIn.halfDay;
-        //document.getElementById(`walkIn-half-day${rentalNum}`).textContent = vehical.walkIn.fullDay;
-
-
-
-        rentalNum++
-    //});
-});
+            rentalNum++
+        });
+    });
