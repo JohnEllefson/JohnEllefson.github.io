@@ -1,0 +1,57 @@
+
+
+body {
+    background-color: #DFFDFF;
+}
+
+h1, h2, h3 {
+    font-family: 'Della Respira', serif;
+    color: #0D3082;
+}
+
+.site-header {
+    font-size: 45px;
+    font-family: 'Della Respira', serif;
+    color: #0D3082;
+    background-color: #B0D1E8;
+}
+
+.nav-text {
+    font-size: 30px;
+    font-family: 'Della Respira', serif;
+    color: #ffffff;
+    background-color: #1B86C4;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p {
+    font-family: 'Sahitya', serif;
+    font-size: 18px;
+}
+
+table {
+    margin: 0px auto;
+    text-align: center;
+}
+
+td {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px 10px 5px 10px;
+}
+
+.footer {
+    background-color: #90F3FF;
+    font-size: 18px;
+    font-family: 'Sahitya', serif;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>~Scoots - Home</title>
+
+    <meta name="description" content="~Scoots - Home">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap&family=Sahitya&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <section class="top-header">
+
+            <img src="images/scoots-logo.png" class="site-logo" alt="Site logo">
+
+            <div class="header-text">
+
+                <h1> ~Scoots </h1>
+
+                <h3> Scoot on over to ~Scoots! </h3>
+
+            </div>
+
+        </section>
+
+        <nav>
+
+            <ul class="nav-bar">
+
+                <li><a href="#" class="response">&#9776; Menu</a></li>
+                <li><a href="index.html" class="highlighted-text"> <strong> Home </strong> </a></li>
+                <li><a href="rentals.html"> Rentals </a></li>
+                <li><a href="reservations.html"> Reservations </a></li>
+                <li><a href="tours.html"> Tours </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+
+            </ul>
+
+        </nav>
+
+        <picture>
+
+            <source media="(min-width: 650px)" srcset="images/home-banner.png">
+            <img src="images/home-banner-small.jpg" class="home-banner" alt="Cozumel Beach">
+
+        </picture>
+
+    </header>
+
+
+    <main class="home-grid">
+
+        <h1 class="current-weather-heading"> Current Weather </h1>
+
+        <!-- Did not use <table> for this "table" because I wanted it to be able to flex in differnt directions depending on the viewport size -->
+
+        <div class="current-weather">
+
+            <div> <span id="temp"></span>&#8457; </div>
+
+            <div> <span id="weather-description"></span> </div>
+
+            <div> <span id="humidityLevel"></span>% </div>
+
+        </div>
+
+        <h1 class="forecast-heading"> 5 Day Weather </h1>
+
+        <!-- Did not use <table> for this "table" because I wanted it to be able to flex in differnt directions depending on the viewport size -->
+
+        <div class="forecast-container">
+
+            <div class="forecast-days">
+
+                <div> <span id="day1"> </span> </div>
+                <div> <span id="day2"> </span> </div>
+                <div> <span id="day3"> </span> </div>
+                <div> <span id="day4"> </span> </div>
+                <div> <span id="day5"> </span> </div>
+
+            </div>
+
+            <div class="forecast-data">
+
+                <div> <span id="temperature1"> </span>&#8457; </div>
+                <div> <span id="temperature2"> </span>&#8457; </div>
+                <div> <span id="temperature3"> </span>&#8457; </div>
+                <div> <span id="temperature4"> </span>&#8457; </div>
+                <div> <span id="temperature5"> </span>&#8457; </div>
+
+            </div>
+
+        </div>
+
+        <section class="call-to-action">
+
+            <h2> Why Rent a Scooter? </h2>
+
+            <p> The beautiful island of Cozumel is the perfect vacation spot. Many people don't realize how big the
+                island actually is, it has an area of 184.5 square miles so walking is not an option. The best way
+                around the island is renting a vehicle. Here at ~Scoots, we pride ourselves on the ease of renting a
+                vehicle, not only is it inexpensive, but its as easy at reserving a specific rental here on our site or
+                even just walking in our store! We also have two locations on the island, and when you're
+                done you may return what you've rented to either location. </p>
+
+        </section>
+
+        <picture class="scooter-img">
+
+            <source media="(min-width: 1028px)" srcset="images/home-scooters.jpg">
+            <source media="(min-width: 650px)" srcset="images/home-scooters-wide.jpg">
+            <img src="images/home-scooters.jpg" class="scooter-img" alt="Riding scooters near the beach">
+
+        </picture>
+
+
+        <section class="rental-info">
+
+            <h2> Rental Types </h2>
+
+            <p> Here at ~Scoots, we have a wide variety of vehicles for rent, from scooters to even Jeeps. Our Honda
+                Metro is a 1 person scooter that is commonly rented due to its very low cost and is very convinient for
+                individuals to get around the island. We also supply two other
+                scooters, the Honda Dio and Honda PCX150. These are two person scooters that are great for couples
+                visiting sites across the island. If you have friends or family with you, our larger vehicals may be a
+                better choice.
+                The Honda Pioneer ATV and Jeep Wrangler (2 door) can have up to four passengers at a time, and if even
+                that isn't quite enough, we also have four door Jeep Wranglers with air conditioning that can take up to
+                five people . </p>
+
+        </section>
+
+        <section class="contact-info">
+
+            <h2> Contact Us Today! </h2>
+
+            <p>
+                <strong> Phone Number: </strong> 999.999.9999
+                <br><br>
+                <strong> Email: </strong> Scoots@gmail.com
+                <br><br>
+                <strong>Social Media:</strong>
+            </p>
+
+            <div class="social-icons">
+
+                <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook Icon"></a>
+
+                <a href="https://www.twitter.com"><img src="images/twitter.png" alt="Twitter Icon"></a>
+
+                <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram Icon"></a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        Weather data is supplied from <a href="https://openweathermap.org">OpenWeatherMap.org</a>
+
+        <br>
+
+        &copy; <span id="currentYear"></span> | John Ellefson | Texas | <a href="https://www.byui.edu/online">BYUI
+            Online
+            Learning</a>
+
+        <br>
+
+        <span id="currentDate"></span>
+
+    </footer>
+
+    <script src="js/cozumel-weather-api.js"></script>
+    <script src="js/nav-and-date.js"></script>
+
+</body>
+
+</html>

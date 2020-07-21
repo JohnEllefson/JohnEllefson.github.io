@@ -1,0 +1,53 @@
+header {
+    max-width: 1000px;
+}
+
+h1 {
+
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+p {
+    font-size: 18.5px;
+    line-height: 20px;
+}
+
+
+
+
+// Home Page
+
+
+
+
+.call-to-action {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+}
+
+.scooter-img {
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+}
+
+.rental-info {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+}
+
+.contact-info {
+    grid-column: 2 / 3;
+    grid-row: 7 / 8;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
