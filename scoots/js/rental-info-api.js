@@ -1,4 +1,4 @@
-fetch("https://raw.githubusercontent.com/JohnEllefson/JohnEllefson.github.io/master/~Scoots/data/rental-info.json")
+fetch("https://raw.githubusercontent.com/JohnEllefson/JohnEllefson.github.io/master/scoots/data/rental-info.json")
     .then((response) => response.json())
     .then((jsObject) => {
 
