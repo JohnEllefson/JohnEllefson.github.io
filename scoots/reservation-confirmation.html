@@ -64,14 +64,22 @@
 
     <main>
 
-        <h1> Your reservation information has been successfully submitted </h1>
+        <h1> Your reservation information has been submitted </h1>
 
         <p class="confirmation-p">
-            You will recieve an automated confirmation via email. This
-            email will also include information for putting down a deposit for the rentals you have requested. All
-            deposits
-            are due at least 24 hours in advance to hold your reservation. We appriciate your business!
+            To confrim your reservation, a $50 deposit is required at least 24 hours in advance. We appreciate your business!
+            Once you have submitted payment for a deposit, you will recieve an automated email confirming your reservation.
         </p>
+
+        <form method="GET" class="form">
+
+            <h3> Credit Card Number: </h3>
+
+            <label>
+
+                <input type="text" name="creditcard" placeholder="Enter your Credit Card Number" pattern="[A-Za-z ]{5,}" required>
+
+            </label>
 
     </main>
 
