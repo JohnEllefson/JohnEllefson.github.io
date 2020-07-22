@@ -412,7 +412,7 @@ header {
   background-color: #B0D1E8; }
 
 .header-text h1 {
-  font-size: 40px; }
+  font-size: 45px; }
 
 .header-text {
   position: relative;
@@ -666,7 +666,7 @@ input:required:valid {
     display: none; }
 
   nav {
-    font-size: 25px; }
+    font-size: 23px; }
 
   h1 {
     font-size: 27px; }
