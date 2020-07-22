@@ -37,6 +37,10 @@ main section {
     padding: 25px;
 }
 
+footer {
+    font-size: 20px;
+}
+
 
 
 
@@ -118,4 +122,136 @@ main section {
     width: 100px;
     height: 50px;
     padding-top: 12px;
+}
+
+
+
+// Rentals
+
+
+
+.rentals-grid {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-gap: 10px;
+}
+
+.rentals-grid th {
+    font-size: 25px;
+    padding: 5px;
+}
+
+.rentals-grid td {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.rentals-grid table {
+    grid-column: 1 / 3;
+}
+
+.rentals-grid h1{
+    grid-column: 1 / 3;
+}
+
+.rentals-grid section {
+    font-size: 20px;
+}
+
+.rentals-scooters {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.rentals-atv {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+}
+
+.rentals-jeeps {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+}
+
+.scooters-img{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.atv-img {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+}
+
+.jeep-img {
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+}
+
+.info-services {
+    grid-column: 1 / 3;
+    grid-row: 7 / 8;
+}
+
+
+
+// Reservations
+
+
+
+.reservations-form {
+    font-size: 20px;
+}
+
+.reservations-rental-info ul {
+    font-size: 16px;
+}
+
+.reservations-rental-info {
+    flex-direction: row;
+}
+
+.reservations-form textarea {
+    padding: 10px;
+    width: 500px;
+    height: 100px;
+}
+
+.confirmation-p {
+    font-size: 27px;
+    line-height: 27px;
+    max-width: 600px;
+}
+
+
+
+
+// Tours 
+
+
+
+
+.tours-grid {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+}
+
+.tours-grid h1 {
+    grid-column: 1 / 3;
+}
+
+.tours-sites {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.Interesting-facts {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.tourist-map {
+    max-width: 900px;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
 }

@@ -63,21 +63,103 @@
     </header>
 
 
-    <main class="home-grid">
+    <main>
 
-        
+        <h1> Our Two Locations </h1>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d29895.75260182018!2d-86.94382751861555!3d20.50749394014823!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1595403057137!5m2!1sen!2sus"
+            width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0">
+        </iframe>
+
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17780.68121552125!2d-86.97782377286521!3d20.468159484474022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1595403116771!5m2!1sen!2sus"
+            width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0">
+        </iframe>
+
+        <h1> Any Questions? Ask Away! </h1>
+
+        <section class="contact-information">
+
+            <h2> Contact Us Through: </h2>
+
+            <p>
+                <strong> Phone Number: </strong> 999.999.9999
+                <br><br>
+                <strong> Email: </strong> Scoots@gmail.com
+                <br><br>
+                <strong>Social Media:</strong>
+            </p>
+
+            <div class="social-icons">
+
+                <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook Icon"></a>
+
+                <a href="https://www.twitter.com"><img src="images/twitter.png" alt="Twitter Icon"></a>
+
+                <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram Icon"></a>
+
+            </div>
+
+        </section>
+
+        <h1> Alternatively Contact Us Here! </h1>
+
+        <form method="GET" action="contact-confirmation.html" class="form">
+
+            <h3> Full Name: </h3>
+
+            <label>
+
+                <input type="text" name="username" placeholder="Enter your full name" pattern="[A-Za-z ]{5,}" required>
+
+            </label>
+
+
+            <h3> Email: </h3>
+
+            <label>
+
+                <input type="email" name="useremail" placeholder="Scoots@gmail.com" required>
+
+            </label>
+
+            <h3> Comments: </h3>
+
+            <label>
+
+                <textarea placeholder="Please enter any comments or questions you may have here." required></textarea>
+
+            </label>
+
+            <label>
+
+                <input type="submit" name="submit" value="Submit Comments">
+
+            </label>
+
+        </form>
 
     </main>
 
     <footer>
 
         &copy; <span id="currentYear"></span> | John Ellefson | Texas | <a href="https://www.byui.edu/online">BYUI
-            Online
-            Learning</a>
+            Online Learning</a> | <a href="resource-page.html">Resources</a>
+
+        <br>
+
+        <br>
+
+        Last Updated: <span id="lastModified"></span>
 
         <br>
 
         <span id="currentDate"></span>
+        <script src="js/last-updated.js"></script>
 
     </footer>
 

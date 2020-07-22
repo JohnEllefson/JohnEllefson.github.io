@@ -62,18 +62,192 @@
 
     </header>
 
+    <main>
 
-    <main class="home-grid">
+        <h1> Rental Information </h1>
 
-        
+        <div class="reservations-rental-info">
+
+            <section>
+
+                <h2> Info and Services </h2>
+
+                <ul>
+
+                    <li> A $50 security deposit is required to confirm reservations. </li>
+                    <li> A valid drivers license is required in hand at time of rental. </li>
+                    <li> No one under 12 years of age are allowed to ride on the scooters. </li>
+                    <li> Fuel charge not included. </li>
+                    <li> Unlimited mileage. </li>
+                    <li> Liability insurance is free of charge. </li>
+                    <li> Reservations rate requires 24 hour prior notification. </li>
+                    <li> Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals. </li>
+                    <li> Payment via Google Pay, cash, credit card, debit card, or PayPal. </li>
+                    <li> Rentals may be returned to either location. </li>
+
+                </ul>
+
+            </section>
+
+            <section>
+
+                <h2> Types of Rentals </h2>
+
+                <ul>
+
+                    <li> Honda Motor Scooters </li>
+
+                    <ul>
+                        <li> Honda Metropolitan (49cc) - 1 person </li>
+                        <li> Honda Dio (110cc) - 2 person </li>
+                        <li> Honda PCX150 (149cc) - 2 person </li>
+                    </ul>
+
+                    <li> ATV Side-by-Side </li>
+
+                    <ul>
+                        <li> Honda Pioneer 1000 </li>
+                    </ul>
+
+                    <li> Jeep Rentals </li>
+
+                    <ul>
+                        
+                        <li> 2-door Jeep Wrangler - open air - manual - 4 people max </li>
+                        <li> 4-door Jeep Wrangler - manual with A/C - 5 people max </li>
+
+                    </ul>
+
+                </ul>
+
+            </section>
+
+        </div>
+
+        <h1> Reserve a Rental Now! </h1>
+
+        <form method="GET" action="reservation-confirmation.html" class="form">
+
+
+            <h3> Full Name: </h3>
+
+            <label>
+
+                <input type="text" name="username" placeholder="Enter your full name" pattern="[A-Za-z ]{5,}" required>
+
+            </label>
+
+
+            <h3> Email: </h3>
+
+            <label>
+
+                <input type="email" name="useremail" placeholder="Scoots@gmail.com" required>
+
+            </label>
+
+
+            <h3> Phone Number: </h3>
+
+            <label>
+
+                <input type="tel" name="phonenumber" placeholder="999.999.9999" required>
+
+            </label>
+
+
+            <h3> Home State or Country: </h3>
+
+            <label>
+
+                <input type="text" name="userhome" placeholder="Enter Home State/Country" pattern="[A-Za-z ]{5,}">
+
+            </label>
+
+
+            <h3> Cruise Line (if applicable): </h3>
+
+            <label>
+
+                <input type="text" name="usercruise" placeholder="Enter your cruise line" pattern="[A-Za-z ]{5,}">
+
+            </label>
+
+
+            <h3> Rental Type: </h3>
+
+            <label>
+
+                <input name="rentaltype" list="rentals" placeholder="Choose a Vehical" required>
+
+                <datalist id="rentals">
+
+                    <option value="Honda Metro Scooter">
+                    <option value="Honda Dio Scooter">
+                    <option value="Honda PCX150 Scooter">
+                    <option value="Honda Pioneer ATV">
+                    <option value="Jeep Wrangler - 2 door">
+                    <option value="Jeep Wrangler - 4 door with a/c">
+
+                </datalist>
+
+            </label>
+
+
+            <h3> Quantity (1 to 10): </h3>
+
+            <label>
+
+                <input type="number" name="quantity" min="1" max="10" required>
+
+            </label>
+
+            <h3> Rental Pick Up Date: </h3>
+
+            <label>
+
+                <input type="date" name="date" required>
+
+            </label>
+
+            <h3> Rental Length: </h3>
+
+            <label>
+                <input type="radio" name="danger" value="full-day" required>
+                Full Day
+            </label>
+
+            <label>
+                <input type="radio" name="danger" value="half-day">
+                Half Day
+            </label>
+
+            <h3> Comments: </h3>
+
+            <label>
+
+                <textarea placeholder="Please enter additional comments or special acomodation requests if any here."></textarea>
+
+            </label>
+
+            <label>
+
+                <input type="submit" name="submit" value="Submit Reservation Report">
+
+            </label>
+
+        </form>
 
     </main>
 
     <footer>
 
         &copy; <span id="currentYear"></span> | John Ellefson | Texas | <a href="https://www.byui.edu/online">BYUI
-            Online
-            Learning</a>
+            Online Learning</a> | <a href="resource-page.html">Resources</a>
+
+        <br>
+
+        Last Updated: <span id="lastModified"></span>
 
         <br>
 
@@ -82,6 +256,7 @@
     </footer>
 
     <script src="js/nav-and-date.js"></script>
+    <script src="js/last-updated.js"></script>
 
 </body>
 

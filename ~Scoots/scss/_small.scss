@@ -27,8 +27,6 @@ header {
 }
 
 .header-text h1 {
-    font-family: $headingFont, sans-serif;
-    color: $headerColor;
     font-size: 40px;
 }
 
@@ -129,11 +127,24 @@ nav a:hover {
 footer {
     background-color: $footBack;
     padding: 30px;
-
+    margin-top: 25px;
 }
 
 .highlighted-text {
     color: rgb(255, 217, 0);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+}
+
+.confirmation-p {
+    font-size: 22px;
+    line-height: 22px;
+    max-width: 430px;
+    margin: auto;
 }
 
 
@@ -167,7 +178,7 @@ footer {
 }
 
 .current-weather div {
-    background-color: #ffffff;
+    background-color: rgb(238, 239, 255);
     border: 1px solid rgb(0, 0, 0);
     width: 140px;
     height: 30px;
@@ -187,7 +198,7 @@ footer {
 }
 
 .forecast-days div {
-    background-color: #e7e7e7;
+    background-color: rgb(255, 184, 78);;
     border: 1px solid rgb(0, 0, 0);
     width: 60px;
     height: 30px;
@@ -195,7 +206,7 @@ footer {
 }
 
 .forecast-data div {
-    background-color: #ffffff;
+    background-color: rgb(238, 239, 255);
     border: 1px solid rgb(0, 0, 0);
     width: 60px;
     height: 30px;
@@ -236,88 +247,101 @@ footer {
 
 
 
-.rentals-grid {
-    display: grid;
-    grid-template-columns: 1fr, 1fr;
-    grid-gap: 10px;
-}
-
 .rentals-grid table {
-    margin: auto;
     border-collapse: collapse;
-    grid-column: 1 / 3;
+    width: 95%;
+    margin: auto;
 }
 
 .rentals-grid th {
     background-color: rgb(255, 184, 78);
     border: 1px solid rgb(0, 0, 0);
-    font-size: 25px;
-    padding: 5px;
+    font-size: 21px;
+    padding: 3px;
 }
 
 .rentals-grid td {
-    background-color: white;
+    background-color: rgb(238, 239, 255);
     border: 1px solid rgb(0, 0, 0);
-    font-size: 20px;
-    padding: 5px;
+    font-size: 16px;
+    padding: 3px;
 }
 
 .rentals-grid section {
-    min-width: 150px;
-}
-
-.rentals-grid h1{
-    grid-column: 1 / 3;
+    font-size: 17px;
 }
 
 .rentals-grid ul {
     text-align: left;
 }
 
-.rentals-scooters {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
-}
-
-.rentals-atv {
-    grid-column: 2 / 3;
-    grid-row: 5 / 6;
-}
-
-.rentals-jeeps {
-    grid-column: 1 / 2;
-    grid-row: 6 / 7;
-}
-
-.scooters-img{
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-    max-width: 350px;
-    height: 100%;
-    width: auto;
-}
-
-.atv-img {
-    grid-column: 1 / 2;
-    grid-row: 5 / 6;
-    max-width: 350px;
-    height: 100%;
-    width: auto;
-}
-
-.jeep-img {
-    grid-column: 2 / 3;
-    grid-row: 6 / 7;
-    max-width: 350px;
-    height: 100%;
-    width: auto;
-}
-
-.info-services {
-    grid-column: 1 / 3;
-    grid-row: 7 / 8;
-}
-
 .rentals-grid img {
+    margin: auto;
+    width: 95%;
+    height: auto;
+    max-width: 380px;
+}
+
+
+
+// Reservations
+
+
+
+
+.reservations-rental-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.reservations-rental-info ul {
+    text-align: left;
+    font-size: 15px;
+}
+
+input:required {
+    border: 2px solid rgb(236, 0, 0);
+}
+
+input:required:valid {
+    border: 2px solid rgb(0, 160, 0);
+}
+
+.form label {
+    margin-bottom: 10px;
+}
+
+.form input {
+    padding: 10px;
+}
+
+.form textarea {
+    padding: 10px;
+    width: 300px;
+    height: 100px;
+}
+
+
+
+
+// Tours 
+
+
+
+
+.tourist-map {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: auto;
+}
+
+.tours-grid ul {
+    text-align: left;
+    font-size: 20px;
+}
+
+.contact-information {
+    max-width: 800px;
     margin: auto;
 }
