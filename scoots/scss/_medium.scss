@@ -15,6 +15,10 @@
     display: none;
 }
 
+nav {
+    font-size: 25px;
+}
+
 h1 {
 
     font-size: 27px;
@@ -132,7 +136,7 @@ footer {
 
 .rentals-grid {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
 }
 
@@ -233,7 +237,7 @@ footer {
 
 .tours-grid {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .tours-grid h1 {

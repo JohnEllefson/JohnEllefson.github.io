@@ -510,7 +510,7 @@ footer {
 
 .home-grid {
   display: grid;
-  grid-template-columns: 1fr, 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 10px; }
 
 .current-weather, .forecast-days, .forecast-data {
@@ -664,6 +664,9 @@ input:required:valid {
   .nav-bar li:first-child {
     display: none; }
 
+  nav {
+    font-size: 25px; }
+
   h1 {
     font-size: 27px; }
 
@@ -747,7 +750,7 @@ input:required:valid {
 
   .rentals-grid {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 10px; }
 
   .rentals-grid th {
@@ -816,7 +819,7 @@ input:required:valid {
 
   .tours-grid {
     display: grid;
-    grid-template-columns: 1fr, 1fr; }
+    grid-template-columns: 1fr 1fr; }
 
   .tours-grid h1 {
     grid-column: 1 / 3; }
